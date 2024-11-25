@@ -47,4 +47,36 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=green'
 ```
 source ~/.zshrc
 ```
+## ຄຳສັ່ງ PROMPT 
+## ສຳຫລັບ nano ~/.zshrc
 
+
+![Screenshot_2024-11-25-18-39-54-02_84d3000e3f4017145260f7618db1d683](https://github.com/user-attachments/assets/d91d376c-1581-417b-ad52-da9059c60273)
+
+```
+PROMPT=$'%F{green}┌─%F{green}SWITCH\n%F{red}Credit %F{green}By Xmas──[%F{yellow}SERVER%~%F{green}]\n%F{green}└─> %F{yellow}'
+```
+## อธิบายโค้ด:
+
+%F{color}: ใช้สำหรับตั้งค่าข้อความเป็นสีที่ต้องการ
+
+green = สีเขียว
+
+yellow = สีเหลือง
+
+
+%~: แสดงชื่อไดเรกทอรีปัจจุบันแบบย่อ
+
+%n: ชื่อผู้ใช้
+
+%m: ชื่อเครื่องคอมพิวเตอร์ (hostname)
+
+%~: แสดงที่อยู่ของไดเรกทอรีปัจจุบัน
+
+$: แสดงสัญลักษณ์ prompt (ตามด้วยเครื่องหมาย $ สำหรับผู้ใช้ปกติ หรือ # สำหรับผู้ใช้ root)
+
+%f: รีเซ็ตสี
+
+$'\n': เพิ่มบรรทัดใหม่ (newline)
+
+%F{default}: รีเซ็ตสี (ไม่ต้องระบุในนี้ เพราะสีจะรีเซ็ตเองหลัง prompt จบ)
