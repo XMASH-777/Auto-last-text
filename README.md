@@ -86,3 +86,13 @@ $'\n': เพิ่มบรรทัดใหม่ (newline)
 echo -e "\033[0;31m\nHEY\033[0;32m~\033[0;31mFU>
 echo -e "\033[1;4;34mXMASH-T\033[0;32m SCRIPT\0>
 ```
+
+## HOME > nano ~/.zshrc
+![Screenshot_2024-11-26-12-26-39-88_84d3000e3f4017145260f7618db1d683](https://github.com/user-attachments/assets/0157d858-0d43-40c9-b780-7750cccb0cae)
+
+```
+pkg install figlet lolcat
+```
+```
+figlet "SWICTH" | lolcat
+```
