@@ -96,3 +96,18 @@ pkg install figlet lolcat
 ```
 figlet "SWICTH" | lolcat
 ```
+![Screenshot_2024-11-26-15-07-40-17_84d3000e3f4017145260f7618db1d683](https://github.com/user-attachments/assets/82cdadb0-619c-439a-85b1-e68434d0f71e)
+
+```
+PROMPT=$'%F{green}\e[1m\nXmas──[%F{yellow}\e[1m\e[41mSERVER\e[0m%F{green}\e[1m]%F{green} ✧✧ ──> %F{white}\e[0m'
+```
+
+## เพิ่มเอฟเฟกต์ "แสงกระพริบ" หรือ "พื้นหลัง"
+คุณสามารถเพิ่มคำสั่ง ANSI เช่น:
+
+\e[5m = ข้อความกระพริบ
+
+\e[1m = ทำให้ตัวหนา
+
+\e[41m = พื้นหลังสีแดง
+
